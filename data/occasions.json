@@ -1,0 +1,179 @@
+{
+  "$schema_note": "Each occasion: id (kebab-case), name {en, ar}, type (public-holiday | national-observance | international-day | awareness-period), authority (issuing body), rule, official (bool), and optional notes {en, ar}. Rule kinds: gregorian {month, day, durationDays?}, hijri {month, day, durationDays?, subjectToAnnouncement: true}, nth-weekday {month, weekday 0=Sun..6=Sat, nth}. Hijri-rule dates are ESTIMATES from the Umm al-Qura calendar; the UAE Cabinet announcement is always authoritative.",
+  "occasions": [
+    {
+      "id": "new-year",
+      "name": { "en": "New Year's Day", "ar": "رأس السنة الميلادية" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "gregorian", "month": 1, "day": 1 },
+      "official": true
+    },
+    {
+      "id": "eid-al-fitr",
+      "name": { "en": "Eid Al Fitr", "ar": "عيد الفطر" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "hijri", "month": 10, "day": 1, "durationDays": 3, "subjectToAnnouncement": true },
+      "official": true,
+      "notes": { "en": "1–3 Shawwal. Holiday period may extend from 29 Ramadan by Cabinet announcement.", "ar": "من ١ إلى ٣ شوال. قد تُمدَّد العطلة من ٢٩ رمضان بقرار من مجلس الوزراء." }
+    },
+    {
+      "id": "arafat-day",
+      "name": { "en": "Arafat Day", "ar": "يوم عرفة" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "hijri", "month": 12, "day": 9, "subjectToAnnouncement": true },
+      "official": true
+    },
+    {
+      "id": "eid-al-adha",
+      "name": { "en": "Eid Al Adha", "ar": "عيد الأضحى" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "hijri", "month": 12, "day": 10, "durationDays": 3, "subjectToAnnouncement": true },
+      "official": true,
+      "notes": { "en": "10–12 Dhu Al Hijjah.", "ar": "من ١٠ إلى ١٢ ذي الحجة." }
+    },
+    {
+      "id": "hijri-new-year",
+      "name": { "en": "Islamic New Year", "ar": "رأس السنة الهجرية" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "hijri", "month": 1, "day": 1, "subjectToAnnouncement": true },
+      "official": true
+    },
+    {
+      "id": "prophets-birthday",
+      "name": { "en": "Prophet Muhammad's Birthday", "ar": "المولد النبوي الشريف" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "hijri", "month": 3, "day": 12, "subjectToAnnouncement": true },
+      "official": true
+    },
+    {
+      "id": "commemoration-day",
+      "name": { "en": "Commemoration Day", "ar": "يوم الشهيد" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet (declared 2015)",
+      "rule": { "kind": "gregorian", "month": 11, "day": 30 },
+      "official": true,
+      "notes": { "en": "A day of national remembrance. The observed public-holiday date has in some years been moved to 1 December by Cabinet announcement.", "ar": "يوم لإحياء ذكرى شهداء الوطن. في بعض السنوات نُقلت العطلة الرسمية إلى ١ ديسمبر بقرار من مجلس الوزراء." }
+    },
+    {
+      "id": "national-day",
+      "name": { "en": "UAE National Day (Eid Al Etihad)", "ar": "عيد الاتحاد" },
+      "type": "public-holiday",
+      "authority": "UAE Cabinet",
+      "rule": { "kind": "gregorian", "month": 12, "day": 2, "durationDays": 2 },
+      "official": true,
+      "notes": { "en": "2–3 December.", "ar": "٢ و٣ ديسمبر." }
+    },
+    {
+      "id": "flag-day",
+      "name": { "en": "UAE Flag Day", "ar": "يوم العلم الإماراتي" },
+      "type": "national-observance",
+      "authority": "UAE national observance (not a public holiday)",
+      "rule": { "kind": "gregorian", "month": 11, "day": 3 },
+      "official": true
+    },
+    {
+      "id": "emirati-womens-day",
+      "name": { "en": "Emirati Women's Day", "ar": "يوم المرأة الإماراتية" },
+      "type": "national-observance",
+      "authority": "General Women's Union (first marked 2015)",
+      "rule": { "kind": "gregorian", "month": 8, "day": 28 },
+      "official": true
+    },
+    {
+      "id": "uae-innovation-month",
+      "name": { "en": "UAE Innovation Month", "ar": "شهر الإمارات للابتكار" },
+      "type": "awareness-period",
+      "authority": "UAE Government",
+      "rule": { "kind": "gregorian", "month": 2, "day": 1, "durationDays": 28 },
+      "official": true,
+      "notes": { "en": "Programme dates are announced by the government each year.", "ar": "تُعلن الحكومة مواعيد البرنامج كل عام." }
+    },
+    {
+      "id": "world-standards-day",
+      "name": { "en": "World Standards Day", "ar": "اليوم العالمي للمواصفات" },
+      "type": "international-day",
+      "authority": "IEC, ISO and ITU jointly",
+      "rule": { "kind": "gregorian", "month": 10, "day": 14 },
+      "official": true
+    },
+    {
+      "id": "science-peace-week",
+      "name": { "en": "International Week of Science and Peace", "ar": "الأسبوع الدولي للعلم والسلم" },
+      "type": "awareness-period",
+      "authority": "UN A/RES/43/61",
+      "rule": { "kind": "gregorian", "month": 11, "day": 9, "durationDays": 7 },
+      "official": true
+    },
+    {
+      "id": "world-science-day",
+      "name": { "en": "World Science Day for Peace and Development", "ar": "اليوم العالمي للعلوم من أجل السلام والتنمية" },
+      "type": "international-day",
+      "authority": "UNESCO 31 C/Res 20",
+      "rule": { "kind": "gregorian", "month": 11, "day": 10 },
+      "official": true
+    },
+    {
+      "id": "anti-cybercrime-day",
+      "name": { "en": "International Anti-Cybercrime Day", "ar": "اليوم الدولي لمكافحة الجريمة السيبرانية" },
+      "type": "international-day",
+      "authority": "UN A/RES/79/243 (UNODC)",
+      "rule": { "kind": "gregorian", "month": 12, "day": 24 },
+      "official": true
+    },
+    {
+      "id": "data-protection-day",
+      "name": { "en": "Data Protection Day", "ar": "يوم حماية البيانات" },
+      "type": "international-day",
+      "authority": "Council of Europe (2006) — not a UN day",
+      "rule": { "kind": "gregorian", "month": 1, "day": 28 },
+      "official": true
+    },
+    {
+      "id": "safer-internet-day",
+      "name": { "en": "Safer Internet Day", "ar": "اليوم العالمي للإنترنت الآمن" },
+      "type": "international-day",
+      "authority": "Better Internet for Kids (EU)",
+      "rule": { "kind": "nth-weekday", "month": 2, "weekday": 2, "nth": 2 },
+      "official": true,
+      "notes": { "en": "Second Tuesday of February.", "ar": "ثاني ثلاثاء من فبراير." }
+    },
+    {
+      "id": "digital-learning-day",
+      "name": { "en": "International Day for Digital Learning", "ar": "اليوم الدولي للتعلم الرقمي" },
+      "type": "international-day",
+      "authority": "UNESCO (proclaimed 2022)",
+      "rule": { "kind": "gregorian", "month": 3, "day": 19 },
+      "official": true
+    },
+    {
+      "id": "creativity-innovation-day",
+      "name": { "en": "World Creativity and Innovation Day", "ar": "اليوم العالمي للإبداع والابتكار" },
+      "type": "international-day",
+      "authority": "UN A/RES/71/284",
+      "rule": { "kind": "gregorian", "month": 4, "day": 21 },
+      "official": true
+    },
+    {
+      "id": "telecom-info-society-day",
+      "name": { "en": "World Telecommunication and Information Society Day", "ar": "اليوم العالمي للاتصالات ومجتمع المعلومات" },
+      "type": "international-day",
+      "authority": "UN A/RES/60/252 (ITU)",
+      "rule": { "kind": "gregorian", "month": 5, "day": 17 },
+      "official": true
+    },
+    {
+      "id": "world-accreditation-day",
+      "name": { "en": "World Accreditation Day", "ar": "اليوم العالمي للاعتماد" },
+      "type": "international-day",
+      "authority": "IAF and ILAC",
+      "rule": { "kind": "gregorian", "month": 6, "day": 9 },
+      "official": true
+    }
+  ]
+}
