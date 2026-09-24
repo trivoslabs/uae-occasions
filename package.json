@@ -1,6 +1,6 @@
 {
   "name": "@trivoslabs/uae-occasions",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "UAE public holidays, national observances and international days — with Hijri dates via the built-in Umm al-Qura calendar. Zero dependencies. | العطلات الرسمية والمناسبات الوطنية في دولة الإمارات",
   "type": "module",
   "main": "src/index.mjs",
@@ -10,7 +10,7 @@
     "test": "node --test"
   },
   "engines": { "node": ">=18" },
-  "keywords": ["uae", "dubai", "holidays", "hijri", "islamic-calendar", "umm-al-qura", "arabic", "observances", "i18n"],
+  "keywords": ["uae", "dubai", "holidays", "hijri", "islamic-calendar", "umm-al-qura", "arabic", "observances", "i18n", "working-days", "business-days"],
   "author": "Trivos Labs FZCO <dev@trivoslabs.com> (https://trivoslabs.com)",
   "license": "Apache-2.0",
   "repository": {

@@ -51,6 +51,25 @@ toHijri(new Date());
 // { year: 1448, month: 4, day: 13, monthName: { en: "Rabi Al Thani", ar: "ربيع الآخر" } }
 ```
 
+## Working days
+
+Check and step through UAE government working days, on either the federal or Sharjah working-week profile.
+
+```js
+import { isWorkingDay, nextWorkingDay, addWorkingDays } from "@trivoslabs/uae-occasions";
+
+isWorkingDay(new Date("2026-10-03"), { profile: "sharjah" }); // false — Saturday
+nextWorkingDay(new Date("2026-12-01"), { profile: "federal" }); // { date: 2026-12-04, estimate: false }
+addWorkingDays(new Date("2026-12-01"), 5, { profile: "federal" });
+```
+
+| Profile | Weekend |
+|---|---|
+| `federal` | Saturday–Sunday |
+| `sharjah` | Friday–Sunday |
+
+This models working days only, for the two published government working weeks; Friday half-days, Ramadan reduced hours and private-sector arrangements are out of scope. Results that skip over an estimated (Hijri-rule) holiday carry estimate: true.
+
 ## Each resolved entry
 
 | Field | Meaning |
@@ -102,5 +121,9 @@ Apache-2.0 © Trivos Labs FZCO
 ## الترخيص
 
 Apache-2.0 © تريفوس لابز
+
+## أيام العمل
+
+توفر المكتبة دوال لأيام العمل الحكومية وفق نموذجين معتمدين: الحكومة الاتحادية (عطلة السبت والأحد) وحكومة الشارقة (عطلة الجمعة إلى الأحد). تشمل هذه الدوال أيام العمل فقط؛ أما نصف يوم الجمعة وساعات رمضان المخفضة وترتيبات القطاع الخاص فخارج النطاق. والنتائج التي تتجاوز عطلة مقدّرة (بقاعدة هجرية) تحمل الوسم estimate: true.
 
 </div>

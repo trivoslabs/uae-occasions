@@ -1,0 +1,15 @@
+{
+  "$schema_note": "Government working-week profiles. weekendDays use JS getUTCDay numbering (0=Sun..6=Sat). This library models working DAYS only; Friday half-days and Ramadan reduced hours are out of scope and recorded as notes. Verified Sep 2026; re-verify against official announcements annually.",
+  "profiles": {
+    "federal": {
+      "name": { "en": "UAE federal government", "ar": "الحكومة الاتحادية لدولة الإمارات" },
+      "weekendDays": [6, 0],
+      "notes": { "en": "Four-and-a-half-day week since 1 January 2022: Monday–Thursday full days, Friday half-day (counted here as a working day), Saturday–Sunday weekend. Also followed by the governments of Abu Dhabi, Dubai, Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah.", "ar": "أسبوع عمل من أربعة أيام ونصف منذ ١ يناير ٢٠٢٢: من الاثنين إلى الخميس أيام كاملة، والجمعة نصف يوم (يُحتسب هنا يوم عمل)، والسبت والأحد عطلة أسبوعية. وتتبعه أيضاً حكومات أبوظبي ودبي وعجمان وأم القيوين ورأس الخيمة والفجيرة." }
+    },
+    "sharjah": {
+      "name": { "en": "Government of Sharjah", "ar": "حكومة الشارقة" },
+      "weekendDays": [5, 6, 0],
+      "notes": { "en": "Four-day week since January 2022: Monday–Thursday, with a Friday–Sunday weekend.", "ar": "أسبوع عمل من أربعة أيام منذ يناير ٢٠٢٢: من الاثنين إلى الخميس، مع عطلة أسبوعية من الجمعة إلى الأحد." }
+    }
+  }
+}
