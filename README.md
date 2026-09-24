@@ -10,6 +10,8 @@ Built and maintained by [Trivos Labs](https://trivoslabs.com), Dubai.
 
 Islamic holiday dates in the UAE are set by **UAE Cabinet announcement**, typically confirmed close to the date. Entries resolved from Hijri rules carry `estimate: true` and should be treated as planning estimates, never as confirmed holiday dates. The Cabinet announcement is always authoritative.
 
+Note also that under the UAE public holiday law (2024), Eid holidays are taken on their religious dates, while other Islamic holidays may be moved to an adjacent weekday to create a long weekend — so the observed day off can legally differ from the religious date this library returns.
+
 ## Install
 
 ```bash
@@ -90,6 +92,8 @@ Apache-2.0 © Trivos Labs FZCO
 ## تنبيه مهم: تقديرات لا إعلانات
 
 تُحدَّد مواعيد العطلات الإسلامية في الدولة بقرار من **مجلس الوزراء**، ويصدر الإعلان عادةً قُبيل الموعد. المدخلات المحسوبة من قواعد هجرية تحمل الوسم `estimate: true` وينبغي التعامل معها كتقديرات للتخطيط لا كمواعيد مؤكدة؛ فالإعلان الرسمي هو المرجع دائماً.
+
+كما ينص قانون العطلات الرسمية (٢٠٢٤) على أن عطلتي العيدين تُمنحان في تاريخيهما الدينيين، بينما يجوز نقل العطلات الإسلامية الأخرى إلى يوم عمل مجاور لتكوين عطلة أسبوعية طويلة — لذا قد يختلف يوم العطلة الفعلي قانونياً عن التاريخ الديني الذي تُرجعه هذه المكتبة.
 
 ## سياسة البيانات
 
